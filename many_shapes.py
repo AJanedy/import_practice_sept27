@@ -1,0 +1,23 @@
+import arcade
+
+new_window = arcade.open_window(1000, 700, "Lots of shapes")
+arcade.set_background_color(arcade.color.WHITE)
+arcade.start_render()
+arcade.draw_line_strip([(20, 30), (200, 30), (300, 200), (200, 300), (20, 30)], arcade.color.BLACK)
+arcade.draw_lrtb_rectangle_outline(350, 450, 300, 50, arcade.color.BLACK, 1)
+arcade.draw_lrtb_rectangle_filled(500, 550, 600, 75, arcade.color.BLACK)
+arcade.draw_xywh_rectangle_outline(650, 100, 100, 100, arcade.color.BLACK)
+arcade.draw_xywh_rectangle_outline(400, 150, 400, 100, arcade.color.BLACK)
+arcade.draw_circle_filled(500, 350, 300, arcade.color.RED)
+arcade.draw_circle_filled(500, 350, 250, arcade.color.WHITE)
+arcade.draw_circle_filled(500, 350, 200, arcade.color.RED)
+arcade.draw_circle_filled(500, 350, 150, arcade.color.WHITE)
+arcade.draw_circle_filled(500, 350, 100, arcade.color.RED)
+arcade.draw_circle_filled(500, 350, 50, arcade.color.WHITE)
+arcade.draw_triangle_filled(455, 325, 545, 325, 500, 400, arcade.color.BLACK)
+arcade.draw_arc_filled(850, 500, 100, 100, arcade.color.BLACK, 30, 340)
+arcade.draw_arc_outline(850, 150, 100, 100, arcade.color.BLACK, 30, 340, 5)
+arcade.draw_parabola_filled(50, 50, 75, 100, arcade.color.BLACK)
+arcade.finish_render()
+arcade.run()
+
